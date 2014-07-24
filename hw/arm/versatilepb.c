@@ -291,6 +291,7 @@ static void versatile_init(QEMUMachineInitArgs *args, int board_id)
     dev = sysbus_create_simple("versatile_i2c", 0x10002000, NULL);
     i2c = (i2c_bus *)qdev_get_child_bus(dev, "i2c");
     i2c_create_slave(i2c, "ds1338", 0x68);
+    i2c_create_slave(i2c, "at24c01", 0x50);
 
     /* Add PL041 AACI Interface to the LM4549 codec */
     pl041 = qdev_create(NULL, "pl041");

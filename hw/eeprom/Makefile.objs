@@ -1,0 +1,1 @@
+common-obj-y += at24c01.o
