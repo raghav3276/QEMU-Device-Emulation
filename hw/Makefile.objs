@@ -1,4 +1,5 @@
 devices-dirs-$(CONFIG_REALLY_VIRTFS) += 9pfs/
+devices-dirs-$(CONFIG_SOFTMMU) += accelerometer/
 devices-dirs-$(CONFIG_ACPI) += acpi/
 devices-dirs-$(CONFIG_SOFTMMU) += audio/
 devices-dirs-$(CONFIG_SOFTMMU) += block/
